@@ -1,5 +1,5 @@
 :root {
-  --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --body-bg: red;
   --msger-bg: #fff;
   --border: 2px solid #ddd;
   --left-msg-bg: #ececec;
@@ -35,18 +35,21 @@ body {
   justify-content: space-between;
   width: 100%;
   max-width: 867px;
-  margin: 25px 10px;
+  margin: 20px 10px;
   height: calc(100% - 50px);
   border: var(--border);
   border-radius: 5px;
   background: var(--msger-bg);
-  box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+ 
 }
 
 .msger-header {
   display: flex;
+  align-items: center;
+  padding-left: 1%;
   justify-content: space-between;
-  padding: 10px;
+  
+  height: 7.5%;
   border-bottom: var(--border);
   background: #eee;
   color: #666;
@@ -55,16 +58,16 @@ body {
 .msger-chat {
   flex: 1;
   overflow-y: auto;
-  padding: 10px;
+  padding: 15px;
 }
 .msger-chat::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 .msger-chat::-webkit-scrollbar-track {
   background: #ddd;
 }
 .msger-chat::-webkit-scrollbar-thumb {
-  background: #bdbdbd;
+  background: black;
 }
 .msg {
   display: flex;
@@ -75,14 +78,16 @@ body {
   margin: 0;
 }
 .msg-img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
   background: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 50%;
+  border-color: black;
+  border-style:solid
 }
 .msg-bubble {
   max-width: 450px;
@@ -111,8 +116,13 @@ body {
 .right-msg {
   flex-direction: row-reverse;
 }
-.right-msg .msg-bubble {
+.right-msg .msg-bubble{
   background: var(--right-msg-bg);
+  color: #fff;
+  border-bottom-right-radius: 0;
+}
+.right-msg .msg-bubble-meph {
+  background: var(--right-msg-bg-meph);
   color: #fff;
   border-bottom-right-radius: 0;
 }
@@ -145,7 +155,7 @@ body {
   transition: background 0.23s;
 }
 .msger-send-btn:hover {
-  background: rgb(0, 180, 50);
+  background: blue;
 }
 
 .msger-chat {
@@ -153,9 +163,7 @@ body {
   
 }
 
-.avatar {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
+@media screen and (min-width: 600px) {
+  /* Styles for screens with a minimum width of 600px go here */
+
 }
