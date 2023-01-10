@@ -7,8 +7,12 @@ const BOT_MSGS = [
   ["Valentin", "./pictures/goldenknight.jpg", "Ich bin tot ☠️"],
   ["Volk", "./pictures/v.png", "Wir sind uns alle einig. Gretchen war das "],
   ["Volk", "./pictures/v.png", "🐐"],
-  ["Messi", "La literatura alemana es genial"],
-  ["Gretchen", "Wo ist Faust hin? "],
+  [
+    "Messi",
+    "./pictures/Brand_Protection_FIFA-World-Cup-Official-Trophy-P4.webp",
+    "La literatura alemana es genial",
+  ],
+  ["Gretchen", "Wo ist Faust hin? ❓"],
 ];
 
 //The Person sending message is Faust

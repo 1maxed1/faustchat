@@ -137,9 +137,9 @@ body {
   background: #eee;
 }
 .msger-inputarea * {
-  padding: 10px;
+  padding: 7.5px;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 1em;
 }
 .msger-input {
@@ -162,8 +162,31 @@ body {
   background-color: #fcfcfe;
   
 }
+#imgMsg{
+  max-width: 100%;
+  height: auto;
+}
 
-@media screen and (min-width: 600px) {
-  /* Styles for screens with a minimum width of 600px go here */
+p {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: larger;
+  font-weight: 500;
+}
 
+.msg-text{
+  overflow: auto;
+}
+.msg-text p {
+  display: block;
+  word-wrap: wrap;
+  word-break: break-all;
+  padding-top: 5px;
+  color: black;
+}
+
+/*Right side message p tag styling*/
+.right-msg .msg-container p{
+  
+  color: white;
 }
