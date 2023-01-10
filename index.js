@@ -12,7 +12,8 @@ const BOT_MSGS = [
     "./pictures/Brand_Protection_FIFA-World-Cup-Official-Trophy-P4.webp",
     "La literatura alemana es genial",
   ],
-  ["Gretchen", "Wo ist Faust hin? ❓"],
+  ["Gretchen", "./pictures/gretchen.jpg", "Wo ist Faust hin? ❓"],
+  ["Marthe", "./pictures/marthe.jpg", "Oh nein"],
 ];
 
 //The Person sending message is Faust
@@ -54,9 +55,12 @@ function appendMessage(name, img, side, text) {
 
 function botResponse() {
   const r = random(0, BOT_MSGS.length - 1);
-  const msgText = BOT_MSGS[r];
-  const delay = msgText.split(" ").length * 100;
-
+  const botmsg = BOT_MSGS[r];
+  const msgText = botmsg[2];
+  //Millisekunden
+  const delay = 1000;
+  const BOT_NAME = botmsg[0];
+  const BOT_IMG = botmsg[1];
   setTimeout(() => {
     appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
   }, delay);

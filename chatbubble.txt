@@ -12,3 +12,4 @@ Valentin, Faust,Meph, Gretchen, Marthe, Volk
 
 //Speech Bubbles copy-paste
 
+<img src="./pictures/memeEnde.jpg" alt="Meme" srcset="" id="imgMsg">
