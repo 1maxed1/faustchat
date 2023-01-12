@@ -13,3 +13,51 @@ Valentin, Faust,Meph, Gretchen, Marthe, Volk
 //Speech Bubbles copy-paste
 
 <img src="./pictures/memeEnde.jpg" alt="Meme" srcset="" id="imgMsg">
+
+
+
+<!--Mephisto chat message-->
+      <div class="msg right-msg">
+        <!--Profile Picture-->
+        <div class="msg-img" style="background-image: url(./pictures/meph.jpg)"></div>
+  
+        <div class="msg-bubble msg-bubble-meph">
+          <div class="msg-info">
+            <div class="msg-info-name">Meph</div>
+            <div class="msg-info-time">12:46</div>
+          </div>
+  
+          <div class="msg-container">
+            <div class="msg-text">
+              <p>Wie die 🐈‍⬛ freu Ich mich </p>
+              <p>auf die Walpurgisnacht</p>
+              <p>Deswegen bleibe Ich auf!</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+<!--Valentin chat message-->
+      <div class="msg left-msg">
+        <!--Profile Picture-->
+        <div class="msg-img" style="background-image: url(./pictures/goldenknight.jpg)"></div>
+  
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Valentin</div>
+            <div class="msg-info-time">12:45</div>
+          </div>
+  
+          <div class="msg-container">
+            <div class="msg-text">
+              <p>Faust, Ich pack dich beim kragen</p>
+              <p>Wirst bald begraben 🪦</p>
+             
+            </div>
+            
+          </div>
+        </div>
+      </div>
