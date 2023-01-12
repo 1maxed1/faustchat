@@ -14,6 +14,8 @@ const BOT_MSGS = [
   ],
   ["Gretchen", "./pictures/gretchen.jpg", "Wo ist Faust hin? ❓"],
   ["Marthe", "./pictures/marthe.jpg", "Oh nein"],
+  ["Mephisto", "./pictures/meph.jpg", "Auf zur Walpurgisnacht"],
+  ["Mephisto", "./pictures/meph.jpg", "Mach dir nichts draus Faust!"],
 ];
 
 //The Person sending message is Faust
@@ -61,9 +63,15 @@ function botResponse() {
   const delay = 1000;
   const BOT_NAME = botmsg[0];
   const BOT_IMG = botmsg[1];
-  setTimeout(() => {
-    appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
-  }, delay);
+  if (BOT_NAME != "Mephisto") {
+    setTimeout(() => {
+      appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+    }, delay);
+  } else {
+    setTimeout(() => {
+      appendMessage(BOT_NAME, BOT_IMG, "right", msgText);
+    }, delay);
+  }
 }
 
 // Utils
