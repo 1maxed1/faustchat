@@ -1,0 +1,129 @@
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyboard-base {
+    max-width: 1085px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 5px;
+}
+
+
+.key {
+    background-color: rgb(243, 243, 243);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+
+
+.delete {
+    grid-column: span 4;
+}
+
+.tab {
+    grid-column: span 3;
+}
+
+.backslash {
+    grid-column: span 3;
+}
+
+.capslock {
+    grid-column: span 4;
+}
+
+.return {
+    grid-column: span 4;
+}
+
+.leftshift {
+    grid-column: span 5;
+}
+
+.rightshift {
+    grid-column: span 5;
+}
+
+.leftctrl {
+    grid-column: span 3;
+}
+
+.command {
+    grid-column: span 3;
+    font-size: 14px;
+}
+
+.space {
+    grid-column: span 13;
+}
+
+#D{
+    border: 2px solid red;
+    border-radius: 5px;
+
+}
+#W{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#A{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#space{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#H{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+a{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 20px;
+    background: red;
+    color: white
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+#card-flex{
+    display: flex;
+}

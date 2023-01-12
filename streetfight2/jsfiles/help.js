@@ -20,6 +20,7 @@ const determineWinner = ({ player, enemy, timerId }) => {
     enemy.health = 0;
   } else if (player.health > enemy.health) {
     displayText.innerHTML = "Faust gewinnt!";
+
     //unnecassary
   } else if (player.health < enemy.health) {
     displayText.style.innerHTML = "Faust gewinnt!";
